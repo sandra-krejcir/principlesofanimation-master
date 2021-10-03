@@ -1,0 +1,19 @@
+.show {
+  animation: translateIn 1s ease-in;
+}
+
+.hide {
+  transition: opacity linear 1.5s;
+  opacity: 0;
+  transition-timing-function: ease-out;
+}
+
+@keyframes translateIn {
+  0% {
+    transform: translateX(-22vw);
+  }
+
+  100% {
+    transform: translateX(0vw);
+  }
+}

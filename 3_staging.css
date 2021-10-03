@@ -1,0 +1,16 @@
+.active {
+  animation: moveLeft 2s;
+}
+
+@keyframes moveLeft {
+  100% {
+    transform: translateX(22vw);
+  }
+}
+
+#settings,
+#stars,
+#search {
+  left: -20vw;
+  width: 20vw;
+}

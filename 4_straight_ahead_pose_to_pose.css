@@ -1,0 +1,64 @@
+:root {
+  --bottom: 55vw;
+}
+.moveRight {
+  animation: moveRight 2.58s infinite linear;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-5vw);
+  }
+
+  100% {
+    transform: translateX(50vw);
+  }
+}
+
+#ball {
+  width: 5vw;
+  height: 5vw;
+  animation: upAndDown 2.58s infinite;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+    transition-timing-function: ease-out;
+  }
+
+  45% {
+    transform: translateY(var(--bottom));
+    transition-timing-function: ease-in;
+  }
+
+  53% {
+    transform: translateY(12vw);
+    transition-timing-function: ease-in;
+  }
+
+  65% {
+    transform: translateY(var(--bottom));
+    transition-timing-function: ease-out;
+  }
+
+  72% {
+    transform: translateY(16vw);
+    transition-timing-function: ease-in;
+  }
+
+  79% {
+    transform: translateY(var(--bottom));
+    transition-timing-function: ease-out;
+  }
+
+  85% {
+    transform: translateY(21vw);
+    transition-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(var(--bottom));
+    transition-timing-function: ease-out;
+  }
+}

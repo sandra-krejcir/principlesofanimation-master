@@ -1,0 +1,36 @@
+.linear {
+  animation: leftToRight 2s linear infinite;
+}
+
+.ease {
+  animation: leftToRight 2s ease infinite;
+}
+
+.ease-in {
+  animation: leftToRight 2s ease-in infinite;
+}
+
+.ease-out {
+  animation: leftToRight 2s ease-out infinite;
+}
+
+.ease-in-out {
+  animation: leftToRight 2s ease-in-out infinite;
+}
+
+.steps {
+  animation: leftToRight 2s cubic-bezier(1, -0.16, 0.09, 0.75) infinite;
+}
+@keyframes leftToRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(45vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,13 @@
+.disappear {
+  animation: moveLeftRight 2s cubic-bezier(0.57, -0.22, 0.1, 0.99);
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(-5vw);
+  }
+
+  100% {
+    transform: translateX(200vw);
+  }
+}
